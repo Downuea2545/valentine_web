@@ -21,6 +21,7 @@ function clearPassword() {
 }
 
 // การเล่น/หยุดเพลง
+const musicButton = document.getElementById('musicButton');
 const backgroundMusic = document.getElementById('backgroundMusic');
 
 // ตรวจสอบปุ่มเล่น/หยุดเพลง
@@ -35,3 +36,4 @@ if (musicButton) {
         }
     });
 }
+
