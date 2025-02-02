@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วันวาเลนไทน์ของเรา</title>
+    <link rel="stylesheet" href="style_password.css">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ฟอร์มกรอกรหัสผ่าน -->
+    <div id="passwordForm" class="password-container">
+        <!-- ส่วนของฟอร์มกรอกรหัส -->
+        <div class="form-container">
+            <p class="form-title">Enter your password</p>
+            <!-- ปุ่มกดตัวเลข -->
+            <div id="numPad">
+                <button class="numButton" onclick="appendDigit('1')">1</button>
+                <button class="numButton" onclick="appendDigit('2')">2</button>
+                <button class="numButton" onclick="appendDigit('3')">3</button>
+                <button class="numButton" onclick="appendDigit('4')">4</button>
+                <button class="numButton" onclick="appendDigit('5')">5</button>
+                <button class="numButton" onclick="appendDigit('6')">6</button>
+                <button class="numButton" onclick="appendDigit('7')">7</button>
+                <button class="numButton" onclick="appendDigit('8')">8</button>
+                <button class="numButton" onclick="appendDigit('9')">9</button>
+                <button class="numButton" onclick="appendDigit('0')">0</button>
+                <button class="numButton" onclick="clearPassword()">Clear</button>
+            </div>
+        </div>
+
+        <!-- รูปภาพด้านข้าง -->
+        <div class="image-container">
+            <img src="https://i.pinimg.com/736x/da/c2/03/dac20358d2557426be0875ffd003f3d0.jpg" alt="รูปภาพที่เกี่ยวข้อง" class="side-image">
+        </div>
+    </div>
+
+    
+
+    <!-- เชื่อมโยงไฟล์ script.js -->
+    <script src="password.js"></script>
+
+</body>
+</html>
