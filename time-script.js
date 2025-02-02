@@ -25,3 +25,19 @@ setInterval(updateTime, 1000);
 function goToMainContent() {
     window.location.href = 'love.html'; // เปลี่ยนไปยังหน้าเนื้อหาหลัก
 }
+
+// การเล่น/หยุดเพลง
+const backgroundMusic = document.getElementById('backgroundMusic');
+
+// ตรวจสอบปุ่มเล่น/หยุดเพลง
+if (musicButton) {
+    musicButton.addEventListener('click', () => {
+        if (backgroundMusic.paused) {
+            backgroundMusic.play();
+            musicButton.innerText = 'หยุดเพลง';
+        } else {
+            backgroundMusic.pause();
+            musicButton.innerText = 'เล่นเพลง';
+        }
+    });
+}
